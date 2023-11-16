@@ -628,7 +628,15 @@ button {
     .shop-item-grid {
         margin-top: 10px;
     }
-
+    .about_container{
+        padding: 20px;
+    }
+    .display-4{
+        text-align: center;
+    }
+    .py-5{
+        padding: 20px;
+    }
 }
 
 @media only screen and (max-width:991px) {
