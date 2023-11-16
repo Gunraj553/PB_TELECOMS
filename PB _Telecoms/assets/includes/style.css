@@ -1,0 +1,544 @@
+/* -------------------------   FONTS CSS STARTS HERE ---------------------------------------------------- */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&family=Roboto+Condensed:wght@300&family=Roboto+Slab:wght@100&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Playfair Display', serif;
+
+    font-family: 'Roboto Condensed', sans-serif;
+
+    font-family: 'Roboto Slab', serif;
+}
+
+input,
+textarea {
+    font-family: 'Playfair Display', serif;
+
+    font-family: 'Roboto Condensed', sans-serif;
+
+    font-family: 'Roboto Slab', serif;
+}
+
+button {
+    font-family: inherit;
+    cursor: pointer;
+}
+
+/* -----------------------------------------  FONTS CSS ENDS HERE --------------------------------------- */
+
+/* ----------------------------------  HEADER CSS STARTS HERE ------------------------------------------ */
+div.header .navbar {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding: 5px;
+}
+
+div.header .topbar {
+    background-color: #212529;
+    padding: 0;
+}
+
+div.header .topbar .container .row {
+    margin: -7px;
+    padding: 0;
+}
+
+div.header .topbar .container .row .col-md-12 {
+    padding: 0;
+}
+
+div.header .topbar p {
+    margin: 0;
+    display: inline-block;
+    font-size: 13px;
+    color: #fff;
+}
+
+div.header .topbar p>i {
+    margin-right: 5px;
+}
+
+div.header .topbar p:last-child {
+    text-align: right;
+}
+
+div.header header .navbar {
+    margin-bottom: 0;
+}
+
+div.header .topbar li.topbar {
+    display: inline;
+    padding-right: 18px;
+    line-height: 52px;
+    transition: all .3s linear;
+}
+
+div.header .topbar li.topbar:hover {
+    color: #1bbde8;
+}
+div.header .navbar-dark .navbar-nav .nav-link {
+	color: white;
+	font-weight: 400;
+}
+
+div.header .topbar ul.info i {
+    color: #131313;
+    font-style: normal;
+    margin-right: 8px;
+    display: inline-block;
+    position: relative;
+    top: 4px;
+}
+
+div.header .topbar ul.info li {
+    float: right;
+    padding-left: 30px;
+    color: #ffffff;
+    font-size: 13px;
+    line-height: 44px;
+}
+
+div.header .topbar ul.info i span {
+    color: #aaa;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 50px;
+    padding-left: 18px;
+}
+
+div.header ul.social-network {
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+
+div.header ul.social-network li {
+    border: none;
+    margin: 0;
+}
+
+div.header ul.social-network li i {
+    margin: 0;
+}
+
+div.header ul.social-network li {
+    display: inline;
+    margin: 0 5px;
+    border: 0px solid #2D2D2D;
+    padding: 5px 0 0;
+    width: 32px;
+    display: inline-block;
+    text-align: center;
+    height: 32px;
+    vertical-align: baseline;
+    color: #000;
+}
+
+div.header ul.social-network {
+    list-style: none;
+    margin: 5px 0 10px -25px;
+    float: right;
+}
+
+div.header .waves-effect {
+    position: relative;
+    cursor: pointer;
+    display: inline-block;
+    overflow: hidden;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-tap-highlight-color: transparent;
+    vertical-align: middle;
+    z-index: 1;
+    will-change: opacity, transform;
+    transition: .3s ease-out;
+    color: #fff;
+}
+
+div.header a {
+    color: #0a0a0a;
+    text-decoration: none;
+}
+
+div.header li {
+    list-style-type: none;
+}
+
+div.header .bg-image-full {
+    background-position: center center;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+div.header .bg-dark {
+    background-color: #222 !important;
+}
+
+div.header .mx-background-top-linear {
+    
+    background: rgba(22, 22, 23, .8);
+}
+@media only screen and (max-width:991px) {
+    div.header .mx-background-top-linear {
+       background: black;
+    }
+    a.nav-link:hover{
+        font-weight: bold;
+    }
+}
+/* --------------------------------------  HEADER CSS ENDS HERE ------------------------------------------ */
+
+
+/* ------------------------    FOOTER CSS  STARTS HERE    ----------------------------------------- */
+div.footer a,
+div.footer a:hover,
+div.footer :focus,
+div.footer a:active {
+    text-decoration: none;
+    outline: none;
+}
+
+div.footer a,
+div.footer a:active,
+div.footer a:focus {
+    color: #333;
+    text-decoration: none;
+    transition-timing-function: ease-in-out;
+    -ms-transition-timing-function: ease-in-out;
+    -moz-transition-timing-function: ease-in-out;
+    -webkit-transition-timing-function: ease-in-out;
+    -o-transition-timing-function: ease-in-out;
+    transition-duration: .2s;
+    -ms-transition-duration: .2s;
+    -moz-transition-duration: .2s;
+    -webkit-transition-duration: .2s;
+    -o-transition-duration: .2s;
+}
+
+div.footer ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+div.footer img {
+    max-width: 100%;
+    height: auto;
+}
+
+div.footer section {
+    padding: 60px 0;
+    /* min-height: 100vh;*/
+}
+
+.footer {
+    background:rgba(22, 22, 23, .8);
+    padding-top: 80px;
+    padding-bottom: 40px;
+}
+
+
+@media only screen and (max-width:768px) {
+    .single_footer {
+        margin-bottom: 30px;
+    }
+}
+
+.single_footer h4 {
+    color: #fff;
+    margin-top: 0;
+    margin-bottom: 25px;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+.single_footer h4::after {
+    content: "";
+    display: block;
+    height: 2px;
+    width: 40px;
+    background: #fff;
+    margin-top: 20px;
+}
+
+.single_footer p {
+    color: #fff;
+}
+
+.single_footer ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+
+
+.single_footer ul li a {
+    color: #fff;
+    -webkit-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+    line-height: 36px;
+    font-size: 15px;
+    text-transform: capitalize;
+}
+
+.single_footer ul li a:hover {
+    color: #ff3666;
+}
+
+
+.single_footer_address ul li {
+    color: #fff;
+}
+
+.single_footer_address ul li span {
+    font-weight: 400;
+    color: #fff;
+    line-height: 28px;
+}
+
+.contact_social ul {
+    list-style: outside none none;
+    margin: 0;
+    padding: 0;
+}
+
+/*START NEWSLETTER CSS*/
+.subscribe {
+    display: block;
+    position: relative;
+    margin-top: 15px;
+    width: 100%;
+}
+
+.subscribe__input {
+    background-color: #fff;
+    border: medium none;
+    border-radius: 5px;
+    color: #333;
+    display: block;
+    font-size: 15px;
+    font-weight: 500;
+    height: 60px;
+    letter-spacing: 0.4px;
+    margin: 0;
+    padding: 0 150px 0 20px;
+    text-align: center;
+    text-transform: capitalize;
+    width: 100%;
+}
+
+@media only screen and (max-width:768px) {
+    .subscribe__input {
+        padding: 0 50px 0 20px;
+    }
+}
+
+.subscribe__btn {
+    background-color: transparent;
+    border-radius: 0 25px 25px 0;
+    color: #01c7e9;
+    cursor: pointer;
+    display: block;
+    font-size: 20px;
+    height: 60px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 60px;
+}
+
+.subscribe__btn i {
+    transition: all 0.3s ease 0s;
+}
+
+@media only screen and (max-width:768px) {
+    .subscribe__btn {
+        right: 0px;
+    }
+}
+
+.subscribe__btn:hover i {
+    color: #ff3666;
+}
+
+button {
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    -webkit-border-radius: 0;
+    border-radius: 0;
+}
+
+/*END NEWSLETTER CSS*/
+
+/*START SOCIAL PROFILE CSS*/
+.social_profile {
+    margin-top: 40px;
+}
+
+.social_profile ul {
+    list-style: outside none none;
+    margin: 0;
+    padding: 0;
+}
+
+.social_profile ul li {
+    float: left;
+}
+
+.social_profile ul li a {
+    text-align: center;
+    border: 0px;
+    text-transform: uppercase;
+    transition: all 0.3s ease 0s;
+    margin: 0px 5px;
+    font-size: 18px;
+    color: #fff;
+    border-radius: 30px;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    display: block;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+@media only screen and (max-width:768px) {
+    .social_profile ul li a {
+        margin-right: 10px;
+        margin-bottom: 10px;
+    }
+}
+
+@media only screen and (max-width:480px) {
+    .social_profile ul li a {
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+    }
+}
+
+.social_profile ul li a:hover {
+    background: #ff3666;
+    border: 1px solid #ff3666;
+    color: #fff;
+    border: 0px;
+}
+
+
+.copyright {
+    margin-top: 70px;
+    padding-top: 40px;
+    color: #fff;
+    font-size: 15px;
+    border-top: 1px solid rgba(255, 255, 255, 0.4);
+    text-align: center;
+}
+
+.copyright a {
+    color: #01c7e9;
+    transition: all 0.2s ease 0s;
+}
+
+.copyright a:hover {
+    color: #ff3666;
+}
+
+
+/* --------------------------------   FOOTER CSS ENDS HERE -------------------------------------------- */
+
+
+.single-banner-slide {
+	height: 100vh;
+	width: 100vw;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	position: relative;
+	z-index: 2;
+}
+.single-banner-slide span {
+	color: #fff;
+	text-transform: uppercase;
+	font-weight: 600;
+}
+.single-banner-slide h2 {
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 60px;
+}
+.single-banner-slide::after {
+	content: "";
+	position: absolute;
+	left: 0;
+	top: 0;
+	background: rgba(0, 0, 0, 0.4);
+	z-index: -1;
+	width: 100%;
+	height: 100%;
+}
+.single-banner-slide p {
+	color: #fff;
+	font-size: 15px;
+	max-width: 50%;
+	margin: 0 auto;
+	text-align: center;
+}
+.single-banner-slide a {
+	color: #000;
+	background: #fff;
+	padding: 10px 45px;
+	border-radius: 100px;
+	text-decoration: none;
+	font-size: 15px;
+	font-weight: 600;
+	margin-top: 30px;
+	transition: 0.3s;
+}
+.single-banner-slide a:hover {
+	color: #fff;
+	background: #000;
+}
+.owl-dots {
+	display: none !important;
+}
+@media only screen and (max-width:991px) {
+    .single-banner-slide {
+        height: 50vh;
+    }
+    /* .single-banner-slide h2 {
+        
+        font-size: 30px;
+    } */
+    
+}
+@media only screen and (max-width:650px) {
+    .single-banner-slide h2 {
+        
+        font-size: 30px;
+    }
+    .single-banner-slide p {
+      display: none;
+    
+    }
+ 
+}
