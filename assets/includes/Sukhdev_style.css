@@ -36,7 +36,6 @@ ul {
 
 .sec-title .title {
   position: relative;
-  color: #00b8ca;
   font-size: 18px;
   font-weight: 700;
   padding-right: 50px;
@@ -77,7 +76,6 @@ ul {
 .contact-page-section .inner-container {
   position: relative;
   z-index: 1;
-  background-color: black;
   box-shadow: 0 0 15px 5px rgba(0, 0, 0, .1)
 }
 
@@ -94,12 +92,12 @@ ul {
 
 .contact-page-section .info-column {
   position: relative;
-  background-color: #070707;
+  background-color: rgba(22, 22, 23, .8);
 }
 
 .contact-page-section .info-column .inner-column {
   position: relative;
-  padding: 60px 35px
+  padding: 60px 35px;
 }
 
 .contact-page-section .info-column h2 {
@@ -129,7 +127,6 @@ ul {
   font-size: 18px;
   color: #fff;
   line-height: 1.8em;
-  padding-left: 45px
 }
 
 .contact-page-section .info-column .list-info li:last-child {
@@ -150,7 +147,7 @@ ul {
 
 .contact-form .form-group {
   position: relative;
-  margin-bottom: 20px
+  margin-bottom: 20px;
 }
 
 .contact-form input[type=text],
