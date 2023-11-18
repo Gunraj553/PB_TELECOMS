@@ -23,6 +23,10 @@
   background-color: whitesmoke;
 }
 
+.about_container i{
+  color: black !important;
+}
+
 /*-------------------------------------- contact us page--------------------------------------------------*/
 
 li,
