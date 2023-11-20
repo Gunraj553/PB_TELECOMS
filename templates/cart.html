@@ -75,98 +75,92 @@
             </nav>
         </div>
     </div>
-    <!-- --------------------------------  Sign up and login page template starts here ---------------------------------------------------->
+    <!-- --------------------------------  contact us template starts here ---------------------------------------------------->
 
     <section class="contact-page-section">
         <div class="container">
             <div class="sec-title">
-                <h2>Be a part of the family...</h2>
+                <div class="title">Cart</div>
+                <h2>Your shopping list .......</h2>
             </div>
             <div class="inner-container">
-                <div class="row2 clearfix">
-                    <div class="wrapper">
-                        <div class="title-text">
-                            <div class="title login">
-                                Login
-                            </div>
-                            <div class="title signup">
-                                Signup
-                            </div>
-                        </div>
-                        <div class="form-container">
-                            <div class="slide-controls">
-                                <input type="radio" name="slide" id="login" checked>
-                                <input type="radio" name="slide" id="signup">
-                                <label for="login" class="slide login">Login</label>
-                                <label for="signup" class="slide signup">SignUp</label>
-                                <div class="slider-tab"></div>
-                            </div>
-                            <div class="form-inner">
-                                <form action="#" class="login" id="loginForm" onsubmit="return validate_login_Form()">
-                                    <div class="field">
-                                        <input type="text" placeholder="Email Address" id="email">
-                                        <div id="emailError" class="error"></div>
-                                    </div>
-                                    <div class="field">
-                                        <input type="password" placeholder="Password" id="password">
-                                        <div id="passwordError" class="error"></div>
-                                    </div>
-                                    <!-- <div class="pass-link">
-                                        <a href="#">Reset password?</a>
-                                    </div> -->
-                                    <div class="field btn">
-                                        <div class="btn-layer"></div>
-                                        <input type="submit" value="Login">
-                                    </div>
-                                    <div class="signup-link">
-                                        Don't Have Account? <a href="">Create A New</a>
-                                    </div>
-                                </form>
-                                <form action="#" class="signup" id="signupForm" onsubmit="return validate_signup_Form()">
-                                    <div class="field">
-                                        <input type="text" placeholder="Email Address" id="login_email">
-                                        <div id="login_emailError" class="error"></div>
-                                    </div>
-                                    <div class="field">
-                                        <input type="password" placeholder="Password" id="login_password">
-                                        <div id="login_passwordError" class="error"></div>
-                                    </div>
-                                    <div class="field">
-                                        <input type="password" placeholder="Confirm Password" id="login_confirmPassword">
-                                        <div id="login_confirmPasswordError" class="error"></div>
-                                    </div>
-                                    <div class="field btn">
-                                        <div class="btn-layer"></div>
-                                        <input type="submit" value="SignUp">
-                                    </div>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
-                    <script>
-                        const loginText = document.querySelector(".title-text .login");
-                        const loginForm = document.querySelector("form.login");
-                        const loginBtn = document.querySelector("label.login");
-                        const signupBtn = document.querySelector("label.signup");
-                        const signupLink = document.querySelector("form .signup-link a");
-                        signupBtn.onclick = (() => {
-                            loginForm.style.marginLeft = "-50%";
-                            loginText.style.marginLeft = "-50%";
-                        });
-                        loginBtn.onclick = (() => {
-                            loginForm.style.marginLeft = "0%";
-                            loginText.style.marginLeft = "0%";
-                        });
-                        signupLink.onclick = (() => {
-                            signupBtn.click();
-                            return false;
-                        });
-                    </script>
+                <div class="row clearfix">
 
+                    <!--Form Column-->
+                    <div class="form-column col-md-12 col-sm-12 col-xs-12">
+                        <table class="table table-striped">
+                            <thead class="thead-dark">
+                                <tr>
+                                    <th scope="col">Product</th>
+                                    <th scope="col">Quantity</th>
+                                    <th scope="col">Unit Price</th>
+                                    <th scope="col">Total</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">Ironhack T-shirt New Design</th>
+                                    <td>3</td>
+                                    <td>10.00$</td>
+                                    <td>30.00$</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Black bounce ball with logo</th>
+                                    <td>1</td>
+                                    <td>2.00$ </td>
+                                    <td>2.00$ </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Super computer sticker </th>
+                                    <td>4</td>
+                                    <td>14.00$</td>
+                                    <td>56.00$</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Smarthpone plastic case </th>
+                                    <td>3</td>
+                                    <td>6.50$</td>
+                                    <td>19.50$</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Water bottle </th>
+                                    <td>2</td>
+                                    <td>6.00$</td>
+                                    <td>12.00$</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Jogging pants - Kardashian style </th>
+                                    <td>8</td>
+                                    <td>17.00$</td>
+                                    <td>12.00$</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Hat </th>
+                                    <td>2</td>
+                                    <td>12.00$</td>
+                                    <td>24.00$</td>
+                                </tr>
+                                <tr class="table-warning">
+                                    <th scope="row">TOTAL </th>
+                                    <td></td>
+                                    <td></td>
+                                    <td>155.50$</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div class="button-wrapper">
+                            <a href="#" class=" cust-btn">CHECK OUT</a>
+                            <a href="#" class=" cust-btn">CONTINUE SHOPPING</a>
+                        </div>
+                        <small class="order-info">Your order will be shipped on the next 48hs.</small>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
+
+
+
     <!-- ---------------------------   FOoTER starts here ---------------------------------------------------------- -->
     <div class="footer">
         <div class="container">

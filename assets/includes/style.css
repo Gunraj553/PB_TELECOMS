@@ -28,6 +28,13 @@ button {
     cursor: pointer;
 }
 
+.error {
+    color: red;
+    font-size: 12px;
+}
+.error-border {
+    border-color:  red !important;
+  }
 /* -----------------------------------------  FONTS CSS ENDS HERE --------------------------------------- */
 
 /* ----------------------------------  HEADER CSS STARTS HERE ------------------------------------------ */
@@ -429,7 +436,7 @@ button {
         margin-right: 10px;
         margin-bottom: 10px;
     }
-    
+
 }
 
 @media only screen and (max-width:480px) {
@@ -501,7 +508,8 @@ button {
 .shop-item-grid {
     margin-top: 40px;
 }
-.shop.shop-item-grid{
+
+.shop.shop-item-grid {
     margin-bottom: 40px;
 }
 
@@ -509,9 +517,10 @@ button {
     display: block;
 }
 
-.shop .single-banner-slide{
+.shop .single-banner-slide {
     height: 80vh;
 }
+
 .single-banner-slide {
     height: 100vh;
     width: 100vw;
@@ -598,7 +607,7 @@ button {
     max-height: 100%;
 }
 
-.shop .carousel-item{
+.shop .carousel-item {
     margin-bottom: 20px;
     padding: 0px;
 }
@@ -625,6 +634,7 @@ button {
     border-radius: 0;
     box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.18);
     font-size: 0.9em;
+    margin: 10px 0px;
 }
 
 .testimonial-card .card-up {
@@ -649,6 +659,104 @@ button {
 .card-up {
     background-color: rgba(22, 22, 23, .8);
 }
+
+/* ----------------------------- CART css starts here --------------------------------------------------- */
+
+
+
+.btn-checkout, .btn-continous, .order-info{
+    float: right;
+    margin-right: 20px;
+  }
+  .order-info{
+    clear: both;
+    margin-top: 10px;
+    padding: 5px;
+    background-color: lightblue;
+    border-radius: 3px;
+  }
+  .ironhack-img{
+    height: 60px;
+    float: left;
+  }
+  .text-header{
+    padding-left: 70px;
+  }
+  .button-wrapper{
+    margin-top: 50px;
+  }
+  .wrapper{
+    max-width: 960px;
+    margin: 30px auto;
+  }
+  
+  /* ----------------------------------- checkout css starts here ------------------------------- */
+
+  .CheckoutForm {
+
+    display: flex;
+    flex-direction: column;
+    margin: 2rem auto;
+    max-width: 769px;
+    padding: 1rem;
+  }
+  .CheckoutForm__title {
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-weight: 500;
+    text-align: center;
+    margin: 1rem 0 2rem;
+  }
+  .CheckoutForm__billing-address > *:not(:first-child) {
+    margin: 1rem auto;
+  }
+  .CheckoutForm__name > *:not(:first-child) {
+    margin: 1rem auto;
+  }
+  @media screen and (min-width: 426px) {
+    .CheckoutForm__name {
+      display: flex;
+    }
+    .CheckoutForm__name > *:not(:first-child) {
+      margin: 0 0 0 1rem;
+    }
+  }
+  .CheckoutForm__note {
+    margin-top: 4rem;
+  }
+  .CheckoutForm__note .CheckoutForm__input {
+    height: 8rem;
+    resize: vertical;
+    line-height: 1.5;
+  }
+  .CheckoutForm__submit {
+    margin-top: 2rem;
+  }
+  .CheckoutForm__input, .CheckoutForm__select {
+    font-size: 0.8em;
+    height: 4rem;
+    width: 100%;
+    padding: 1rem;
+    box-sizing: border-box;
+    outline: none;
+    letter-spacing: 2px;
+    transition: all 0.3s ease-in-out;
+    text-transform: uppercase;
+  }
+  .CheckoutForm__input::placeholder, .CheckoutForm__select::placeholder {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+  .CheckoutForm__input:focus, .CheckoutForm__select:focus {
+    
+
+    text-transform: initial;
+    letter-spacing: 1px;
+  }
+
+
+
+
 
 @media only screen and (max-width : 576px) {
     .shop-item-grid .carousel-item {

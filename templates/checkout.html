@@ -75,98 +75,74 @@
             </nav>
         </div>
     </div>
-    <!-- --------------------------------  Sign up and login page template starts here ---------------------------------------------------->
+    <!-- --------------------------------  contact us template starts here ---------------------------------------------------->
 
     <section class="contact-page-section">
         <div class="container">
             <div class="sec-title">
-                <h2>Be a part of the family...</h2>
+                <div class="title">Checkout</div>
+                <h2>Your order arrives soon</h2>
             </div>
             <div class="inner-container">
-                <div class="row2 clearfix">
-                    <div class="wrapper">
-                        <div class="title-text">
-                            <div class="title login">
-                                Login
-                            </div>
-                            <div class="title signup">
-                                Signup
-                            </div>
-                        </div>
-                        <div class="form-container">
-                            <div class="slide-controls">
-                                <input type="radio" name="slide" id="login" checked>
-                                <input type="radio" name="slide" id="signup">
-                                <label for="login" class="slide login">Login</label>
-                                <label for="signup" class="slide signup">SignUp</label>
-                                <div class="slider-tab"></div>
-                            </div>
-                            <div class="form-inner">
-                                <form action="#" class="login" id="loginForm" onsubmit="return validate_login_Form()">
-                                    <div class="field">
-                                        <input type="text" placeholder="Email Address" id="email">
-                                        <div id="emailError" class="error"></div>
-                                    </div>
-                                    <div class="field">
-                                        <input type="password" placeholder="Password" id="password">
-                                        <div id="passwordError" class="error"></div>
-                                    </div>
-                                    <!-- <div class="pass-link">
-                                        <a href="#">Reset password?</a>
-                                    </div> -->
-                                    <div class="field btn">
-                                        <div class="btn-layer"></div>
-                                        <input type="submit" value="Login">
-                                    </div>
-                                    <div class="signup-link">
-                                        Don't Have Account? <a href="">Create A New</a>
-                                    </div>
-                                </form>
-                                <form action="#" class="signup" id="signupForm" onsubmit="return validate_signup_Form()">
-                                    <div class="field">
-                                        <input type="text" placeholder="Email Address" id="login_email">
-                                        <div id="login_emailError" class="error"></div>
-                                    </div>
-                                    <div class="field">
-                                        <input type="password" placeholder="Password" id="login_password">
-                                        <div id="login_passwordError" class="error"></div>
-                                    </div>
-                                    <div class="field">
-                                        <input type="password" placeholder="Confirm Password" id="login_confirmPassword">
-                                        <div id="login_confirmPasswordError" class="error"></div>
-                                    </div>
-                                    <div class="field btn">
-                                        <div class="btn-layer"></div>
-                                        <input type="submit" value="SignUp">
-                                    </div>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
-                    <script>
-                        const loginText = document.querySelector(".title-text .login");
-                        const loginForm = document.querySelector("form.login");
-                        const loginBtn = document.querySelector("label.login");
-                        const signupBtn = document.querySelector("label.signup");
-                        const signupLink = document.querySelector("form .signup-link a");
-                        signupBtn.onclick = (() => {
-                            loginForm.style.marginLeft = "-50%";
-                            loginText.style.marginLeft = "-50%";
-                        });
-                        loginBtn.onclick = (() => {
-                            loginForm.style.marginLeft = "0%";
-                            loginText.style.marginLeft = "0%";
-                        });
-                        signupLink.onclick = (() => {
-                            signupBtn.click();
-                            return false;
-                        });
-                    </script>
+                <div class="row clearfix">
 
+                    <!--Form Column-->
+                    <div class="form-column col-md-12 col-sm-12 col-xs-12">
+                        <form action="" class="CheckoutForm">
+
+                            <div class="CheckoutForm__billing-address">
+                                <h4 class="CheckoutForm__title">Billing details</h4>
+                                <div class="CheckoutForm__name">
+                                    <input class="CheckoutForm__input" type="text" aria-label="first name"
+                                        placeholder="First name">
+                                    <input class="CheckoutForm__input" type="text" aria-label="last name"
+                                        placeholder="Last name">
+                                </div>
+                                <input class="CheckoutForm__input" type="text" aria-label="company name"
+                                    placeholder="Company name" name="coupon">
+                                <select class="CheckoutForm__select" name="country" id="country">
+                                    <option value="0" label="" selected="selected">Country</option>
+                                    <option value="US" label="United States">United States</option>
+                                </select>
+                                <select class="CheckoutForm__select">
+                                    <option value="0" label="" selected="selected">State / District</option>
+                                    <option value="AL">Alabama</option>
+                                    <option value="AK">Alaska</option>
+                                    <option value="AZ">Arizona</option>
+                                    <option value="AR">Arkansas</option>
+                                    <option value="CA">California</option>
+                                    <option value="CO">Colorado</option>
+                                    <option value="CT">Connecticut</option>
+                                </select>
+                                <input class="CheckoutForm__input" type="text" aria-label="town / city"
+                                    placeholder="Town / City" name="coupon">
+                                <input class="CheckoutForm__input" type="text" aria-label="Postcode / ZIP"
+                                    placeholder="Postcode / ZIP" name="coupon">
+                                <input class="CheckoutForm__input" type="text" aria-label="Street address"
+                                    placeholder="Street address" name="coupon">
+                                <input class="CheckoutForm__input" type="text" aria-label="Phone" placeholder="Phone"
+                                    name="coupon">
+                                <input class="CheckoutForm__input" type="text" aria-label="Email" placeholder="Email"
+                                    name="coupon">
+                            </div>
+
+                            <div class="CheckoutForm__note">
+                                <h4 class="CheckoutForm__title">Additional information</h4>
+                                <textarea class="CheckoutForm__input" type="text" aria-label="Order notes"
+                                    placeholder="Order notes&#10;e.g. special notes for delivery"></textarea>
+                            </div>
+
+                            <button type="submit" class="cust-btn">Place order</button>
+
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
+
+
+
     <!-- ---------------------------   FOoTER starts here ---------------------------------------------------------- -->
     <div class="footer">
         <div class="container">

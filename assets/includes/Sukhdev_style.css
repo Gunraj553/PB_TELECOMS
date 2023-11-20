@@ -88,7 +88,12 @@ ul {
 
 .contact-page-section .form-column {
   position: relative;
-  padding: 0 0 0 15px
+}
+.inner-container .row {
+	margin: 0px;
+}
+.form-column{
+  padding: 0px;
 }
 
 .contact-page-section .form-column .inner-column {
