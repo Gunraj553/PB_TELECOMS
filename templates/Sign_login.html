@@ -1,0 +1,230 @@
+<!-- Author: PB_TELECOME -->
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="../assets/images/logo.png">
+    <title>PB Telecoms</title>
+    <link href="../includes/css/bootstrap.css" rel="stylesheet">
+    <link href="../assets/includes/style.css" rel="stylesheet">
+    <link href="../assets/includes/Sukhdev_style.css" rel="stylesheet">
+    <link rel="stylesheet" href="../includes/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../includes/css/owl.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+    <script src="../includes/js/jquery.js"></script>
+    <script src="../includes/js/bootstrap.js"></script>
+    <script src="../includes/js/popper.js"></script>
+    <script src="../includes/js/owl.js"></script>
+    <script src="../assets/includes/custom.js"></script>
+
+
+
+</head>
+
+<body>
+    <!-- ---------------------- header starts here ------------------------------------------------------ -->
+    <div class="header">
+        <div class="fixed-top">
+            <nav class="navbar navbar-expand-lg navbar-dark mx-background-top-linear">
+                <div class="container">
+                    <a class="navbar-brand" href="index.html" style="text-transform: uppercase;"> PB TELECOMS</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+                        aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarResponsive">
+
+                        <ul class="navbar-nav ml-auto">
+
+                            <li class="nav-item active">
+                                <a class="nav-link" href="index.html">Home
+                                    <span class="sr-only">(current)</span>
+                                </a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="about_us.html">About Us</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="buy_apple.html">Buy Apple</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="buy_android.html">Buy Android</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Testimonials</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="Sign_login.html">Sign Up / Login</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="contact_us.html">Contact Us</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <!-- --------------------------------  Sign up and login page template starts here ---------------------------------------------------->
+
+    <section class="contact-page-section">
+        <div class="container">
+            <div class="sec-title">
+                <h2>Be a part of the family...</h2>
+            </div>
+            <div class="inner-container">
+                <div class="row2 clearfix">
+                    <div class="wrapper">
+                        <div class="title-text">
+                            <div class="title login">
+                                Login
+                            </div>
+                            <div class="title signup">
+                                Signup
+                            </div>
+                        </div>
+                        <div class="form-container">
+                            <div class="slide-controls">
+                                <input type="radio" name="slide" id="login" checked>
+                                <input type="radio" name="slide" id="signup">
+                                <label for="login" class="slide login">Login</label>
+                                <label for="signup" class="slide signup">SignUp</label>
+                                <div class="slider-tab"></div>
+                            </div>
+                            <div class="form-inner">
+                                <form action="#" class="login" id="loginForm" onsubmit="return validate_login_Form()">
+                                    <div class="field">
+                                        <input type="text" placeholder="Email Address" id="email">
+                                        <div id="emailError" class="error"></div>
+                                    </div>
+                                    <div class="field">
+                                        <input type="password" placeholder="Password" id="password">
+                                        <div id="passwordError" class="error"></div>
+                                    </div>
+                                    <!-- <div class="pass-link">
+                                        <a href="#">Reset password?</a>
+                                    </div> -->
+                                    <div class="field btn">
+                                        <div class="btn-layer"></div>
+                                        <input type="submit" value="Login">
+                                    </div>
+                                    <div class="signup-link">
+                                        Don't Have Account? <a href="">Create A New</a>
+                                    </div>
+                                </form>
+                                <form action="#" class="signup" id="signupForm" onsubmit="return validate_signup_Form()">
+                                    <div class="field">
+                                        <input type="text" placeholder="Email Address" id="login_email">
+                                        <div id="login_emailError" class="error"></div>
+                                    </div>
+                                    <div class="field">
+                                        <input type="password" placeholder="Password" id="login_password">
+                                        <div id="login_passwordError" class="error"></div>
+                                    </div>
+                                    <div class="field">
+                                        <input type="password" placeholder="Confirm Password" id="login_confirmPassword">
+                                        <div id="login_confirmPasswordError" class="error"></div>
+                                    </div>
+                                    <div class="field btn">
+                                        <div class="btn-layer"></div>
+                                        <input type="submit" value="SignUp">
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <script>
+                        const loginText = document.querySelector(".title-text .login");
+                        const loginForm = document.querySelector("form.login");
+                        const loginBtn = document.querySelector("label.login");
+                        const signupBtn = document.querySelector("label.signup");
+                        const signupLink = document.querySelector("form .signup-link a");
+                        signupBtn.onclick = (() => {
+                            loginForm.style.marginLeft = "-50%";
+                            loginText.style.marginLeft = "-50%";
+                        });
+                        loginBtn.onclick = (() => {
+                            loginForm.style.marginLeft = "0%";
+                            loginText.style.marginLeft = "0%";
+                        });
+                        signupLink.onclick = (() => {
+                            signupBtn.click();
+                            return false;
+                        });
+                    </script>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ---------------------------   FOoTER starts here ---------------------------------------------------------- -->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-sm-4 col-xs-12">
+                    <div class="single_footer">
+                        <h4>Products</h4>
+                        <ul>
+                            <li><a href="#">Iphone 15</a></li>
+                            <li><a href="#">Iphone 15 pro</a></li>
+                            <li><a href="#">Ipad Pro</a></li>
+                            <li><a href="#">Samsung Fold</a></li>
+                            <li><a href="#">One Plus</a></li>
+                        </ul>
+                    </div>
+                </div><!--- END COL -->
+                <div class="col-md-4 col-sm-4 col-xs-12">
+                    <div class="single_footer single_footer_address">
+                        <h4>Page Link</h4>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="about_us.html">About Us</a></li>
+                            <li><a href="buy_apple.html">Buy Apple </a></li>
+                            <li><a href="buy_android.html">By Samsung</a></li>
+                            <li><a href="#">Testimonials</a></li>
+                            <li><a href="Sign_login.html">Sign Up / Login </a></li>
+                            <li><a href="contact_us.html">Contact Us</a></li>
+                        </ul>
+                    </div>
+                </div><!--- END COL -->
+                <div class="col-md-4 col-sm-4 col-xs-12">
+                    <div class="single_footer single_footer_address">
+                        <h4>Subscribe today</h4>
+                        <div class="signup_form">
+                            <form action="#" class="subscribe">
+                                <input type="text" class="subscribe__input" placeholder="Enter Email Address">
+                                <button type="button" class="subscribe__btn"><i class="fa fa-paper-plane"></i></button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="social_profile">
+                        <ul>
+                            <li><a href="#"><i class=" fa fa-facebook"></i></a></li>
+                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fa fa-google"></i></a></li>
+                            <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                        </ul>
+                    </div>
+                </div><!--- END COL -->
+            </div><!--- END ROW -->
+            <div class="row">
+                <div class="col-lg-12 col-sm-12 col-xs-12">
+                    <p class="copyright">Copyright © 2023 <a href="#"></a>.</p>
+                </div><!--- END COL -->
+            </div><!--- END ROW -->
+        </div><!--- END CONTAINER -->
+    </div>
+
+</body>
+
+</html>
