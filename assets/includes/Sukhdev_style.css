@@ -263,10 +263,10 @@ ul {
   color: #222
 }
 /* ---------------------------------------css for sign up and login page---------------------------------- */
-::selection {
+/* ::selection {
   background: #12e8f0;
   color: #fff;
-}
+} */
 .wrapper {
   overflow: hidden;
   max-width: 390px;
@@ -438,4 +438,10 @@ form .btn input[type="submit"] {
   align-items: center;
   justify-content: center;
   margin-left: -15px;
+}
+.inner-container2{
+  position: relative;
+  z-index: 1;
+  box-shadow: 0 0 15px 5px rgba(0, 0, 0, .1);
+  padding: 2%;
 }
