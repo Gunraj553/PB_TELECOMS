@@ -20,7 +20,7 @@
     <script src="../includes/js/popper.js"></script>
     <script src="../includes/js/owl.js"></script>
     <script src="../assets/includes/custom.js"></script>
-    <script src = "../assets/includes/auth.js"></script>
+    <script src="../assets/includes/auth.js"></script>
 
 
 
@@ -89,25 +89,29 @@
 
                     <!--Form Column-->
                     <div class="form-column col-md-12 col-sm-12 col-xs-12">
-                        <form action="" class="CheckoutForm">
+                        <form action="#" class="CheckoutForm" onsubmit="return validate_checkout_form()">
 
                             <div class="CheckoutForm__billing-address">
                                 <h4 class="CheckoutForm__title">Billing details</h4>
-                                <div class="CheckoutForm__name">
-                                    <input class="CheckoutForm__input" type="text" aria-label="first name"
-                                        placeholder="First name">
-                                    <input class="CheckoutForm__input" type="text" aria-label="last name"
-                                        placeholder="Last name">
-                                </div>
-                                <input class="CheckoutForm__input" type="text" aria-label="company name"
-                                    placeholder="Company name" name="coupon">
+                                <!-- <div class="CheckoutForm__name"> -->
+                                <input class="CheckoutForm__input" type="text" aria-label="first name"
+                                    placeholder="First name" id="first_name">
+                                <div id="first_name_Error" class="error"></div>
+                                <input class="CheckoutForm__input" type="text" aria-label="middle name"
+                                    placeholder="Middle name" id="middle_name">
+                                <div id="middle_name_Error" class="error"></div>
+                                <!-- </div> -->
+                                <input class="CheckoutForm__input" type="text" aria-label="last name"
+                                    placeholder="Last name" name="coupon" id="last_name">
+                                <div id="last_name_Error" class="error"></div>
                                 <select class="CheckoutForm__select" name="country" id="country">
-                                    <option value="0" label="" selected="selected">Country</option>
+                                    <option value="CA" label="" selected="selected">Country</option>
                                     <option value="US" label="United States">United States</option>
                                 </select>
-                                <select class="CheckoutForm__select">
-                                    <option value="0" label="" selected="selected">State / District</option>
-                                    <option value="AL">Alabama</option>
+                                <div id="country_Error" class="error"></div>
+                                <select class="CheckoutForm__select" id="state">
+                                    
+                                    <option value="AL" selected="selected">Alabama</option>
                                     <option value="AK">Alaska</option>
                                     <option value="AZ">Arizona</option>
                                     <option value="AR">Arkansas</option>
@@ -115,16 +119,22 @@
                                     <option value="CO">Colorado</option>
                                     <option value="CT">Connecticut</option>
                                 </select>
+                                <div id ="state_Error" class="error"></div>
                                 <input class="CheckoutForm__input" type="text" aria-label="town / city"
-                                    placeholder="Town / City" name="coupon">
+                                    placeholder="Town / City" name="city" id="city">
+                                <div id="city_Error" class="error"></div>
                                 <input class="CheckoutForm__input" type="text" aria-label="Postcode / ZIP"
-                                    placeholder="Postcode / ZIP" name="coupon">
+                                    placeholder="Postcode / ZIP" name="post_code" id="post">
+                                <div id="post_Error" class="error"></div>
                                 <input class="CheckoutForm__input" type="text" aria-label="Street address"
-                                    placeholder="Street address" name="coupon">
+                                    placeholder="Street address" name="address" id="street">
+                                <div id="street_Error" class="error"></div>
                                 <input class="CheckoutForm__input" type="text" aria-label="Phone" placeholder="Phone"
-                                    name="coupon">
+                                    name="phone" id="phone">
+                                <div id="phone_Error" class="error"></div>
                                 <input class="CheckoutForm__input" type="text" aria-label="Email" placeholder="Email"
-                                    name="coupon">
+                                    name="email" id="email">
+                                <div id="email_Error" class="error"></div>
                             </div>
 
                             <div class="CheckoutForm__note">
@@ -154,7 +164,7 @@
                         <ul>
                             <li><a href="buy_apple.html">Iphone 15</a></li>
                             <li><a href="buy_apple.html">Iphone 15 pro</a></li>
-                            <li><a href="buy_apple.html">Ipad Pro</a></li>
+                            <li><a href="buy_apple.html#ipad_pro">Ipad Pro</a></li>
                             <li><a href="buy_android.html">Samsung Fold</a></li>
                             <li><a href="buy_android.html">One Plus</a></li>
                         </ul>
