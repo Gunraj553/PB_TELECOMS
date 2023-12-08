@@ -455,9 +455,9 @@ button {
 }
 
 .social_profile ul li a:hover {
-    background: #ff3666;
-    border: 1px solid #ff3666;
-    color: #fff;
+    background: white;
+    border: 1px solid white;
+    color: black;
     border: 0px;
 }
 
