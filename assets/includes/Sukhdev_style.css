@@ -76,8 +76,9 @@ ul {
 
 .contact-page-section {
   position: relative;
-  padding-top: 110px;
-  padding-bottom: 110px;
+  /* padding-top: 0px; */
+  /* padding-bottom: 110px; */
+  margin-top: 60px;
 }
 
 .contact-page-section .inner-container {
