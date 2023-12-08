@@ -460,7 +460,9 @@ button {
     color: black;
     border: 0px;
 }
-
+.fa.fa-paper-plane{
+    color: black;
+  }
 
 .copyright {
     margin-top: 70px;
