@@ -80,6 +80,9 @@ ul {
   /* padding-bottom: 110px; */
   margin-top: 60px;
 }
+.fa.fa-paper-plane{
+  color: black;
+}
 
 .contact-page-section .inner-container {
   position: relative;
