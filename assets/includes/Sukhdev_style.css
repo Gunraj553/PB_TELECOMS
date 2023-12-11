@@ -330,9 +330,18 @@ ul {
   background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(113,121,123,1) 50%, rgba(64,64,74,1) 100%);
   transition: all 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
-input[type="radio"] {
-  display: none;
-}
+  /* input[type="radio"] {
+    display: none;
+  } */
+  #login,#signup{
+    display: none;
+  }
+  #gender{
+      height : 25px;
+  }
+  .reset_btn button{
+    width: 100%;
+  }
 #signup:checked ~ .slider-tab {
   left: 50%;
 }

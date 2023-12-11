@@ -1,12 +1,10 @@
+// Author: PB_TELECOME 
+//  Sukhdev Singh C0895314 
+//  Gunraj Singh C0893229  
+//  Maneet Pal Singh C0893295
+//  Deepankshudeep Singh C0893296
 jQuery(document).ready(function ($) {
-    // $("#owl-demo").owlCarousel({
-    //     navigation: true,
-    //     slideSpeed: 300,
-    //     paginationSpeed: 500,
-    //     items: 1,
-    //     singleItem: true,
-    //     autoPlay: 4000
-    // });
+
     $(".all-banner-slide").owlCarousel({
         dots: true,
         slideSpeed: 300,
@@ -59,22 +57,47 @@ function validate_signup_Form() {
     document.getElementById('login_passwordError').innerHTML = '';
     document.getElementById('login_confirmPasswordError').innerHTML = '';
     document.getElementById('login_nameError').innerHTML = '';
+    document.getElementById('gender_Error').innerHTML = '';
+    document.getElementById('dob_Error').innerHTML = '';
+
 
     document.getElementById('login_email').classList.remove('error-border');
     document.getElementById('login_password').classList.remove('error-border');
     document.getElementById('login_confirmPassword').classList.remove('error-border');
     document.getElementById('login_name').classList.remove('error-border');
+    document.getElementById('dob').classList.remove('error_border');
+
 
     // Get values from form
     var email = document.getElementById('login_email').value.trim();
     var password = document.getElementById('login_password').value.trim();
     var confirmPassword = document.getElementById('login_confirmPassword').value.trim();
     var name = document.getElementById('login_name').value.trim();
+    var gender = document.querySelector('input[name="gender"]:checked');
+    var dob = document.getElementById('dob').value.trim();
 
     // Validate email
     if (!email) {
         document.getElementById('login_emailError').innerHTML = 'Email is required';
         document.getElementById('login_email').classList.add('error-border');
+        return false;
+    }
+
+    if (!name) {
+        document.getElementById('login_nameError').innerHTML = 'Name is required';
+        document.getElementById('login_name').classList.add('error-border');
+        return false;
+    }
+    
+    if(!dob){
+        document.getElementById('dob_Error').innerHTML = "Date of birth is required";
+        document.getElementById('dob').classList.add('error-border');
+        return false;
+
+    }
+
+    if(!gender){
+        document.getElementById('gender_Error').innerHTML = 'Gender is required';
         return false;
     }
 
@@ -100,11 +123,7 @@ function validate_signup_Form() {
         return false;
     }
 
-    if (!name) {
-        document.getElementById('login_nameError').innerHTML = 'Name is required';
-        document.getElementById('login_name').classList.add('error-border');
-        return false;
-    }
+   
 
     // Redirect if valid
     if (email && password && confirmPassword && (password === confirmPassword) && password.length >= 8 && name) {
@@ -332,7 +351,7 @@ function authenticateUser(email, password) {
 
 
             console.log("login");
-            alert("Login successful!");
+            // alert("Login successful!");
            
             window.location.href = "index.html"; 
         } else {
@@ -349,4 +368,12 @@ function clearSignupForm() {
     document.querySelector("#login_confirmPassword").value = "";
 }
 
+
+function clearForm() {
+    // Get the form element
+    var form = document.getElementById('signupForm');
+
+    // Reset the form
+    form.reset();
+}
 
