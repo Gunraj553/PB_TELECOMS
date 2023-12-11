@@ -13,7 +13,7 @@
     <title>PB Telecoms</title>
     <link href="../includes/css/bootstrap.css" rel="stylesheet">
     <link href="../assets/includes/style.css" rel="stylesheet">
-    <link href="../assets/includes/Sukhdev_style.css" rel="stylesheet">    
+    <link href="../assets/includes/Sukhdev_style.css" rel="stylesheet">
     <link rel="stylesheet" href="../includes/css/font-awesome.min.css">
     <link rel="stylesheet" href="../includes/css/owl.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -138,6 +138,28 @@
                                         <div id="login_nameError" class="error"></div>
                                     </div>
                                     <div class="field">
+                                        <input type="text" placeholder="Date of birth" id="dob"
+                                            onfocus="(this.type='date')">
+                                        <div id="dob_Error" class="error"></div>
+                                    </div>
+                                    <div class="field" id="gender">
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="gender"
+                                                id="gender_male" value="male">
+                                            <label class="form-check-label" for="gender_male">Male</label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="gender"
+                                                id="gender_female" value="option2">
+                                            <label class="form-check-label" for="gender_female">Female</label>
+                                        </div>
+                                        <div id="gender_Error" class="error"></div>
+                                    </div>
+                                    <div class="field">
+                                        <textarea class="form-control" id="comments" 
+                                            rows="2" placeholder="comments"></textarea>
+                                    </div>
+                                    <div class="field">
                                         <input type="password" placeholder="Password" id="login_password">
                                         <div id="login_passwordError" class="error"></div>
                                     </div>
@@ -146,8 +168,13 @@
                                             id="login_confirmPassword">
                                         <div id="login_confirmPasswordError" class="error"></div>
                                     </div>
+                                    <div class="reset_btn">
+                                       
+                                        <button type="button" class="cust-btn" onclick="clearForm()">Clear Form</button>
+                                    </div>
                                     <div class="field btn">
                                         <div class="btn-layer"></div>
+                                        
                                         <input type="submit" value="SignUp and Login">
                                     </div>
                                 </form>
@@ -203,7 +230,7 @@
                             <li><a href="buy_apple.html">Buy Apple </a></li>
                             <li><a href="buy_android.html">By Samsung</a></li>
                             <li><a href="testimonials.html">Testimonials</a></li>
-                        
+
                             <li><a href="contact_us.html">Contact Us</a></li>
                             <li><a href="terms_condition.html">Terms and condition</a></li>
                         </ul>
@@ -237,7 +264,7 @@
         </div><!--- END CONTAINER -->
     </div>
     <script>
-        
+
 
     </script>
 </body>
