@@ -377,7 +377,21 @@ ul {
   width: 100%;
   margin-top: 20px;
 }
-.form-inner form .field input, textarea {
+.form-comments{
+  width: 100%;
+  outline: none;
+  padding-left: 15px;
+  border-radius: 5px;
+  border: 1px solid black;
+  border-bottom-width: 2px;
+  font-size: 17px;
+  transition: all 0.3s ease;
+}
+.form-comments:focus{
+  border: 2px solid black;
+  border-color: black;
+}
+.form-inner form .field input {
   height: 100%;
   width: 100%;
   outline: none;
@@ -388,7 +402,7 @@ ul {
   font-size: 17px;
   transition: all 0.3s ease;
 }
-.form-inner form .field input, textarea :focus {
+.form-inner form .field input :focus {
   border: 2px solid black;
 }
 .form-inner form .field input::placeholder {
