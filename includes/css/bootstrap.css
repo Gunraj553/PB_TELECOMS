@@ -4345,7 +4345,7 @@ tbody.collapse.show {
     align-items: center;
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
-    justify-content: space-between
+    justify-content: flex-end
 }
 
 .navbar-brand {
@@ -4355,7 +4355,8 @@ tbody.collapse.show {
     margin-right: 1rem;
     font-size: 1.25rem;
     line-height: inherit;
-    white-space: nowrap
+    white-space: nowrap;
+    padding-right: 18%
 }
 
 .navbar-brand:focus,
@@ -4566,7 +4567,8 @@ tbody.collapse.show {
     .navbar-expand-lg>.container,
     .navbar-expand-lg>.container-fluid {
         padding-right: 0;
-        padding-left: 0
+        padding-left: 0;
+        text-align: center;
     }
 }
 
