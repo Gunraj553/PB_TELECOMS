@@ -372,7 +372,6 @@ function clearSignupForm() {
 function clearForm() {
     // Get the form element
     var form = document.getElementById('signupForm');
-
     // Reset the form
     form.reset();
 }

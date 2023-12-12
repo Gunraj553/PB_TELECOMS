@@ -156,8 +156,8 @@
                                         <div id="gender_Error" class="error"></div>
                                     </div>
                                     <div class="field">
-                                        <textarea class="form-control" id="comments" 
-                                            rows="2" placeholder="comments"></textarea>
+                                        <textarea id="comments" 
+                                            rows="2" placeholder="Comments"></textarea>
                                     </div>
                                     <div class="field">
                                         <input type="password" placeholder="Password" id="login_password">
@@ -168,14 +168,13 @@
                                             id="login_confirmPassword">
                                         <div id="login_confirmPasswordError" class="error"></div>
                                     </div>
-                                    <div class="reset_btn">
-                                       
-                                        <button type="button" class="cust-btn" onclick="clearForm()">Clear Form</button>
+                                    <div class="field btn">
+                                        <div class="btn-layer"></div>
+                                        <input type="submit" value="SignUp and Login">
                                     </div>
                                     <div class="field btn">
                                         <div class="btn-layer"></div>
-                                        
-                                        <input type="submit" value="SignUp and Login">
+                                        <input type="submit"  onclick="clearForm()" value="Clear Form">
                                     </div>
                                 </form>
                             </div>
