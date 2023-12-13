@@ -320,6 +320,19 @@ ul {
 .slide-controls label.signup {
   color: #000;
 }
+.field .cust-btn{
+  width: 100%;
+}
+#signupForm{
+  overflow-y: auto;
+}
+
+#signupForm .field,.field.btn{
+  padding-right: 20px;
+}
+.form-inner{
+  height: 350px;
+}
 .slide-controls .slider-tab {
   position: absolute;
   height: 100%;
@@ -448,18 +461,22 @@ form .btn:hover .btn-layer {
   left: 0;
 }
 form .btn input[type="submit"] {
-  height: 100%;
-  width: 100%;
-  z-index: 2;
-  position: relative;
-  background: none;
-  border: none;
-  color: #fff;
-  padding-left: 0;
-  border-radius: 10px;
-  font-size: 20px;
-  font-weight: 500;
-  cursor: pointer;
+  text-align: center;
+  color: black;
+  border: 1px solid black;
+  height: 50px;
+  display: block;
+  text-align: center;
+  font-size: 16px;
+  color: black;
+  transition: all .6s ease-out;
+  display: block;
+  background: linear-gradient(to right, black 50%, white 50%);
+  background-size: 200% 100%;
+  background-position: right bottom;
+  transition: all .5s ease-out;
+  padding-top: 10px;
+  margin-top: 10px;
 }
 .row2 {
   display: -webkit-box;

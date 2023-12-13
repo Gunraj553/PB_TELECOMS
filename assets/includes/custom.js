@@ -80,24 +80,28 @@ function validate_signup_Form() {
     if (!email) {
         document.getElementById('login_emailError').innerHTML = 'Email is required';
         document.getElementById('login_email').classList.add('error-border');
+        jQuery('form#signupForm').animate({'scrollTop':0},1800);
         return false;
     }
 
     if (!name) {
         document.getElementById('login_nameError').innerHTML = 'Name is required';
         document.getElementById('login_name').classList.add('error-border');
+        jQuery('form#signupForm').animate({'scrollTop':0},1800);
         return false;
     }
     
     if(!dob){
         document.getElementById('dob_Error').innerHTML = "Date of birth is required";
         document.getElementById('dob').classList.add('error-border');
+        jQuery('form#signupForm').animate({'scrollTop':0},1800);
         return false;
 
     }
 
     if(!gender){
         document.getElementById('gender_Error').innerHTML = 'Gender is required';
+        jQuery('form#signupForm').animate({'scrollTop':0},1800);
         return false;
     }
 
@@ -105,10 +109,12 @@ function validate_signup_Form() {
     if (!password) {
         document.getElementById('login_passwordError').innerHTML = 'Password is required';
         document.getElementById('login_password').classList.add('error-border');
+        jQuery('form#signupForm').animate({'scrollTop':0},1800);
         return false;
     } else if (password.length < 8) {
         document.getElementById('login_passwordError').innerHTML = 'Password must be at least 8 characters';
         document.getElementById('login_password').classList.add('error-border');
+        jQuery('form#signupForm').animate({'scrollTop':0},1800);
         return false;
     }
 
@@ -116,10 +122,12 @@ function validate_signup_Form() {
     if (!confirmPassword) {
         document.getElementById('login_confirmPasswordError').innerHTML = 'Confirm Password is required';
         document.getElementById('login_confirmPassword').classList.add('error-border');
+        jQuery('form#signupForm').animate({'scrollTop':0},1800);
         return false;
     } else if (password !== confirmPassword) {
         document.getElementById('login_confirmPasswordError').innerHTML = 'Passwords do not match';
         document.getElementById('login_confirmPassword').classList.add('error-border');
+        jQuery('form#signupForm').animate({'scrollTop':0},1800);
         return false;
     }
 
@@ -173,6 +181,7 @@ function validate_checkout_form(){
     if (!first_name) {
         document.getElementById('first_name_Error').innerHTML = 'First name is required';
         document.getElementById('first_name').classList.add('error-border');
+      
         return false;
     }
     if (!middle_name) {

@@ -20,13 +20,14 @@ body {
 }
 
 
-select{
+select {
     background: none;
     /* border : 1px solid rgba(22, 22, 26, 0.18); */
 }
 
 input,
-textarea,select {
+textarea,
+select {
     font-family: 'Playfair Display', serif;
 
     font-family: 'Roboto Condensed', sans-serif;
@@ -44,9 +45,11 @@ button {
     color: red;
     font-size: 12px;
 }
+
 .error-border {
-    border-color:  red !important;
-  }
+    border-color: red !important;
+}
+
 /* -----------------------------------------  FONTS CSS ENDS HERE --------------------------------------- */
 
 /* ----------------------------------  HEADER CSS STARTS HERE ------------------------------------------ */
@@ -465,9 +468,10 @@ button {
     color: black;
     border: 0px;
 }
-.fa.fa-paper-plane{
+
+.fa.fa-paper-plane {
     color: black;
-  }
+}
 
 .copyright {
     margin-top: 70px;
@@ -678,75 +682,92 @@ button {
 
 
 
-.btn-checkout, .btn-continous, .order-info{
+.btn-checkout,
+.btn-continous,
+.order-info {
     float: right;
     margin-right: 20px;
-  }
-  .order-info{
+}
+
+.order-info {
     clear: both;
     margin-top: 10px;
     padding: 5px;
     background-color: lightblue;
     border-radius: 3px;
-  }
-  .ironhack-img{
+}
+
+.ironhack-img {
     height: 60px;
     float: left;
-  }
-  .text-header{
+}
+
+.text-header {
     padding-left: 70px;
-  }
-  .button-wrapper{
+}
+
+.button-wrapper {
     margin-top: 50px;
-  }
-  .wrapper{
+}
+
+.wrapper {
     max-width: 960px;
     margin: 30px auto;
-  }
-  
-  /* ----------------------------------- checkout css starts here ------------------------------- */
+}
 
-  .CheckoutForm {
+/* ----------------------------------- checkout css starts here ------------------------------- */
+
+.CheckoutForm {
 
     display: flex;
     flex-direction: column;
     margin: 2rem auto;
     max-width: 769px;
     padding: 1rem;
-  }
-  .CheckoutForm__title {
+}
+
+.CheckoutForm__title {
     text-transform: uppercase;
     letter-spacing: 4px;
     font-weight: 500;
     text-align: center;
     margin: 1rem 0 2rem;
-  }
-  .CheckoutForm__billing-address > *:not(:first-child) {
+}
+
+.CheckoutForm__billing-address>*:not(:first-child) {
     margin: .3rem auto;
-  }
-  .CheckoutForm__name > *:not(:first-child) {
+}
+
+.CheckoutForm__name>*:not(:first-child) {
     margin: 1rem auto;
-  }
-  @media screen and (min-width: 426px) {
+}
+
+@media screen and (min-width: 426px) {
     .CheckoutForm__name {
-      display: flex;
+        display: flex;
     }
-    .CheckoutForm__name > *:not(:first-child) {
-      margin: 0 0 0 1rem;
+
+    .CheckoutForm__name>*:not(:first-child) {
+        margin: 0 0 0 1rem;
     }
-  }
-  .CheckoutForm__note {
+}
+
+.CheckoutForm__note {
     margin-top: 4rem;
-  }
-  .CheckoutForm__note .CheckoutForm__input {
+}
+
+.CheckoutForm__note .CheckoutForm__input {
     height: 8rem;
     resize: vertical;
     line-height: 1.5;
-  }
-  .CheckoutForm__submit {
+}
+
+.CheckoutForm__submit {
     margin-top: 2rem;
-  }
-  .CheckoutForm__input, .CheckoutForm__select {
+}
+
+.CheckoutForm__input,
+.CheckoutForm__select {
     font-size: 0.8em;
     height: 4rem;
     width: 100%;
@@ -756,17 +777,21 @@ button {
     letter-spacing: 2px;
     transition: all 0.3s ease-in-out;
     text-transform: uppercase;
-  }
-  .CheckoutForm__input::placeholder, .CheckoutForm__select::placeholder {
+}
+
+.CheckoutForm__input::placeholder,
+.CheckoutForm__select::placeholder {
     text-transform: uppercase;
     letter-spacing: 2px;
-  }
-  .CheckoutForm__input:focus, .CheckoutForm__select:focus {
-    
+}
+
+.CheckoutForm__input:focus,
+.CheckoutForm__select:focus {
+
 
     text-transform: initial;
     letter-spacing: 1px;
-  }
+}
 
 
 
@@ -812,4 +837,19 @@ button {
 
     }
 
+}
+
+@media only screen and (max-width: 576px) {
+    #hide_mobile {
+        display: none;
+    }
+
+    .card-text {
+        line-height: 1.5em;
+        height: 3em;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        width: 100%;
+    }
 }
